@@ -1,0 +1,320 @@
+/* site-specific styles for Sweet John Bloom 
+* Lara Warman
+* larawarman.com
+* @larawarman
+*/
+
+html, body, h2, h4, h5 {
+	font-family: 'Nunito', sans-serif;
+}
+
+h1, h3 {
+	font-family: 'Archivo Black', sans-serif;
+}
+
+.top {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 1;
+	width:100%;
+	background:#ed1c24;
+}
+
+svg {
+	display:block;
+	margin:0 auto;
+}
+
+svg path.fade { fill: #000; }
+svg path.fade:hover { opacity: 0.2; }
+
+svg a.songTitle {
+	font-family: 'Archivo Black', sans-serif;
+	text-decoration: none;
+	font-size:22px;
+	fill:#ffffff;
+	cursor:pointer;
+}
+svg a.songTitle:hover {
+	fill:#af1519;
+}
+
+.daIcon {
+	font-family: 'FontAwesome';
+}
+
+.main-titles-overlay {
+	z-index:10;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-156px;
+}
+.main-titles {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 20px auto;
+	width:313px;
+}
+
+.main-titles h1, .main-titles h2 {
+	color:#fff;
+}
+
+.main-titles h1 {
+	border-top:#fff 2px solid;
+	border-bottom: #fff 2px solid;
+	font-size:27px;
+}
+
+.main-titles h2{
+	font-size:24px;
+}
+
+.player {
+	background-color:#ed1c24;
+	min-height: 50px;
+	width:100%;
+}
+
+
+.controls{
+	float:left;
+	margin: 15px 0 15px 30px;
+}
+
+.controls a, .controls a:visited {
+	float:left;
+	margin: 0 15px 0 0;
+	text-decoration:none;
+	color:#fff;
+	cursor:pointer;
+}
+.controls a:hover {
+	color:#ccc;
+}
+
+ol.tracks li{
+  display: block; }
+
+.play {
+  display: block; }
+
+.pause {
+  display: none; }
+
+.playing .play {
+  display: none; }
+.playing .pause {
+  display: block; }
+
+
+.isPlaying {
+	float:right;
+	margin: 0 30px 0 0;
+	width:450px;
+	display:block;
+}
+.playhead-bg{
+	background:#fff;
+	height:10px;
+	margin:20px 0;
+	opacity:0.5;
+}
+.playhead {
+	background:#fff;
+	height:10px;
+	width:0%;
+	margin:-30px 0 0 0;
+	opacity:1.0;
+}
+
+.player .title {
+	cursor:auto;
+	float:right;
+	margin:15px;
+	text-align: right;
+	color:#fff;
+	/*min-width: 130px;*/
+}
+
+.info {
+	position:relative;
+	display:block;
+	z-index:100;
+	background:#fff;
+}
+
+.container {
+	background-color:#fff;
+	clear:both;
+}
+
+.songs {
+	font-family: 'Archivo Black', sans-serif;
+	color:#fff;
+}
+
+.content {
+    margin-top:30px;
+    border-top: 3px solid #ed1c24;
+    padding:30px 0;
+    color: #ed1c24;
+}
+
+.album {
+	position:relative;
+	width:100%;
+	min-height:400px;
+    background: url(../images/sjb-album.jpg) no-repeat 0px 90px; 
+}
+
+.shows{
+
+}
+
+.shows p{
+	font-size:13px;
+	text-transform: uppercase;
+}
+
+.info h3, .info h4 {
+	font-family: Helvetica, sans-serif;
+	color:#ed1c24;
+	font-size: 16px;
+	margin: 0 0 20px 0;
+}
+
+.info h3 {
+	font-weight: bold;
+}
+
+.info p {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+
+a.redbutton {
+	font-family: Helvetica, sans-serif;
+	background-color: #ed1c24;
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+	width:90px;
+	text-align: center;
+	float:right;
+	padding:6px 0;
+	text-decoration:none;
+}
+
+a.redbutton:hover {
+	background-color: #cb1c21;
+}
+
+.the-footer {
+	height:60px;
+	background-color: #ed1c24;
+	text-align: center;
+	padding:20px;
+	color:#fff;
+}
+
+.the-footer a {
+	color:#fff;
+	text-decoration: none;
+}
+
+.the-footer a:hover {
+	text-decoration:underline;
+}
+
+@media only screen and (max-width: 767px){
+	.main-titles-overlay {
+		z-index:10;
+		position:absolute;
+		top:0;
+		left:50%;
+		margin-left:-10px;
+	}
+	.main-titles {
+		text-align: center;
+		text-transform: uppercase;
+		margin: 10px auto;
+		width:215px;
+	}
+
+	.main-titles h1, .main-titles h2 {
+		color:#fff;
+		line-height: 20px;
+		margin-bottom:0;
+	}
+
+	.main-titles h1 {
+		border-top:#fff 2px solid;
+		border-bottom: #fff 2px solid;
+		font-size:18px;
+	}
+
+	.main-titles h2{
+		font-size:14px;
+	}
+	
+	.player {
+		background-color:#ed1c24;
+		min-height:100px;
+		width:100%;
+	}
+
+	.controls{
+		margin: 0 5%;
+	}
+
+
+	.isPlaying {
+		/*clear:both;*/
+		float:none;
+		width:90%;
+		margin:10px auto;
+		padding:20px 0 0 0;
+	}
+
+	.playhead-bg{
+		background:#fff;
+		height:10px;
+		opacity:0.5;
+	}
+	.playhead {
+		background:#fff;
+		height:10px;
+		width:0%;
+		opacity:1.0;
+	}
+
+	.player .title {
+		cursor:auto;
+		float:left;
+		margin:0 0 0 5%;
+		text-align: left;
+		color:#fff;
+	}
+
+}
+
+/* OLD 100% WIDTH
+.svg-player {
+  position: fixed; 
+  top: -60%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+  z-index: 1;
+
+}
+.svg-player svg { display: inline-block;
+position: absolute; top: 0; left: 0; right:0; bottom:0;
+margin:auto;
+min-width:20%;
+min-height:20%;}
+}*/
